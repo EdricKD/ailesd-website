@@ -3,69 +3,120 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Ailes D. – Coming Soon</title>
+  <title>Ailes D – Interior Design Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Open+Sans&display=swap" rel="stylesheet">
   <style>
     body {
-      background-color: #000; /* Black background */
-      color: #F7E7CE; /* Champagne text */
-      font-family: 'Georgia', serif;
+      font-family: 'Open Sans', sans-serif;
       margin: 0;
-      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #1e1e1e;
+      color: white;
+      padding: 2rem;
       text-align: center;
     }
-
-    .container {
-      padding: 5rem 2rem;
-    }
-
-    .logo {
-      max-width: 250px;
-      margin-bottom: 2rem;
-    }
-
     h1 {
+      font-family: 'Playfair Display', serif;
       font-size: 2.5rem;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
     }
-
-    .subtitle {
-      font-size: 1.2rem;
-      margin-bottom: 3rem;
-    }
-
-    .contact {
-      font-size: 1rem;
-      margin-top: 2rem;
+    .tagline {
       font-style: italic;
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
     }
-
-    .audio-controls {
-      margin-top: 2rem;
+    section {
+      padding: 3rem 1.5rem;
+      max-width: 900px;
+      margin: auto;
     }
-
-    audio {
-      display: block;
-      margin: 1rem auto;
+    .values, .services {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+    .pillars div, .services div {
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background-color: #bfa77a;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    @media (max-width: 768px) {
+      .values, .services {
+        grid-template-columns: 1fr;
+      }
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="ailesd-logo.png" alt="Ailes D. Logo" class="logo"/>
-    <div class="subtitle">FROM BLANK TO BOLD STATEMENT. </div>
-    <div class="subtitle">DESIGNED TO SPEAK. STYLED TO SOAR </div>
-    <h1>COMING SOON.</h1>
+  <header>
+    <h1>Ailes D</h1>
+    <p class="tagline">Designed to Speak. Styled to Soar.</p>
+  </header>
 
-    <div class="audio-controls">
-      <audio controls autoplay loop>
-        <source src="soft-classical.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
+  <section>
+    <h2>About Us</h2>
+    <p><strong>Ailes D</strong> is an interior design studio that transforms blank spaces into bold, elegant statements through bespoke window and wall finishes. Rooted in authenticity and mastery, we elevate every space with grace, warmth, and soul.</p>
+    <a href="#services" class="button">Explore Our Services</a>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div>
+        <h3>Window Treatments</h3>
+        <ul>
+          <li>Roller, Vertical & Roman Blinds</li>
+          <li>Motorized Options</li>
+          <li>Blackout & Layered Curtains</li>
+          <li>Custom Sewing & Fittings</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Wall Treatments</h3>
+        <ul>
+          <li>Wallpapers (Vinyl, Textile, Non-woven)</li>
+          <li>Textured & Decorative Paints</li>
+          <li>3D Wall Panels</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div class="contact">Contact: 0244304437</div>
-  </div>
+  <section>
+    <h2>The Pillars of Ailes D</h2>
+    <div class="pillars">
+      <div><strong>Purpose</strong>: We transform with intention and impact.</div>
+      <div><strong>Authenticity</strong>: Real beauty starts from within.</div>
+      <div><strong>Mastery</strong>: We elevate through depth and discipline.</div>
+      <div><strong>Craftsmanship</strong>: Every detail done with care and quality.</div>
+      <div><strong>Elegance</strong>: Quiet sophistication that speaks volumes.</div>
+      <div><strong>Lushness</strong>: Warm, soulful, richly textured spaces.</div>
+      <div><strong>Inspiration</strong>: Our designs uplift and stir the soul.</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Ailes D – Interior Design Studio</p>
+    <p>Email: info@ailesd.com | Instagram: @ailesd.design</p>
+  </footer>
 </body>
 </html>
